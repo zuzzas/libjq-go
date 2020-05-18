@@ -55,7 +55,6 @@ To build your program with this library, you should install some build dependenc
 apt-get install build-essential autoconf automake libtool flex bison wget
 git clone https://github.com/flant/libjq-go
 cd libjq-go
-git submodule update --init
 ./scripts/build-libjq-static.sh $(pwd) $(pwd)/out
 export LIBJQ_CFLAGS="-I$(pwd)/out/jq/include"
 export LIBJQ_LDFLAGS="-L$(pwd)/out/oniguruma/lib -L$(pwd)/out/jq/lib"
